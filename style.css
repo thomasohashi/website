@@ -91,7 +91,7 @@ header {
 	to {rotate: -3deg;}
 }
 
-.top-potato {
+.wobbly-header {
 	animation: slide-top 3s ease-in-out infinite alternate-reverse;
 }
 
