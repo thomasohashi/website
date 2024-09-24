@@ -56,25 +56,43 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 html {
-	background: color(display-p3 1 0.745 0.797);
-	color: rgb(172, 100, 100);
+	background: linear-gradient(color(display-p3 0.414 0 0.603) 30%, color(display-p3 1 0.74 0.834));
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	color: color(display-p3 1 0.833 0.504);
 	font-family: "Cartridge Rough";
 }
 
 h1 {
 	font-size: 5em;
-	color: color(display-p3 1 0.321 0.511);
+	color: color(display-p3 1 0.374 0.549);
 	font-family: "Cartridge Bold";
 }
 
 p {
-	font-size: 2em;	
+	font-size: 2em;
 }
 
 header {
 	margin: 2em auto;
 	justify-content: center;
 	text-align: center;
+}
+
+@keyframes slide-top {
+	from {translate: -15px; rotate: 1deg;}
+	to {translate: 15px; rotate: -1deg;}
+	to {translate: -15px; rotate: -1deg;}
+	to {translate: 15px rotate: 1deg;}
+}
+
+@keyframes rotate-top {
+	from {rotate: 3deg;}
+	to {rotate: -3deg;}
+}
+
+.top-potato {
+	animation: slide-top 3s ease-in-out infinite alternate-reverse;
 }
 
 .starbox1, .starbox2 {
