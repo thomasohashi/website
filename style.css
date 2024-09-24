@@ -47,12 +47,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @font-face {
 	font-family: "Cartridge Bold";
-	src: url(fonts/Cartridge-BoldRough.otf);
+	src: url('fonts/Cartridge-BoldRough.otf');
 }
 
 @font-face {
 	font-family: "Cartridge Rough";
-	src: url(fonts/Cartridge-Rough.otf);
+	src: url('fonts/Cartridge-Rough.otf');
 }
 
 html {
@@ -113,7 +113,7 @@ header {
 }
 
 .starbox1, .starbox2 ul li {
-	filter: drop-shadow(0px 0px 0.25em #ffffff)
+	filter: drop-shadow(0px 0px 0.25em white)
 }
 
 .starbox2 ul li:nth-child(1) {
@@ -137,24 +137,24 @@ header {
 }
 
 .star1:hover, .star2:hover, .star3:hover {
-	filter:drop-shadow(0px 0px 0.25em color(display-p3 1 0.939 0.665));
+	filter: drop-shadow(0px 0px 0.5em white);
 	transform: scale(1.1);
 }
 
 .star1:active {
 	fill: white;
 	transform: scale(1);
-	filter: drop-shadow(0px 0px 0.5em #ffffff);
+	filter: drop-shadow(0px 0px 0.75em white);
 }
 
 .star2:active {
 	fill: color(display-p3 0.915 0.978 1);
 	transform: scale(1);
-	filter: drop-shadow(0px 0px 0.5em color(display-p3 0.915 0.978 1));
+	filter: drop-shadow(0px 0px 0.75em white);
 }
 
 .star3:active {
 	fill: color(display-p3 0.909 1 0.829);
 	transform: scale(1);
-	filter: drop-shadow(0px 0px 0.5em color(display-p3 0.936 1 0.883));
+	filter: drop-shadow(0px 0px 0.75em white);
 }
