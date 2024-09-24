@@ -1,0 +1,57 @@
+html {
+	background: pink;
+}
+
+.starbox {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.starbox ul {
+	height: 100%;
+	padding: 0;
+	margin: 0 auto;
+	height: 200px;
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	align-content: flex-start;
+}
+
+.starbox ul li:nth-child(1) {
+	transform: rotate(10deg);
+}
+
+.starbox ul li:nth-child(2) {
+	align-self: flex-end;
+}
+
+.starbox ul li:nth-child(3) {
+	transform: rotate(-10deg);
+}
+
+.star {
+	display: flex;
+	color: white;
+	justify-content: center;
+	transition: all .2s ease-in-out;
+}
+
+.star {
+	padding: 3em;
+	width: 4em;
+	height: 4em;
+	fill: color(display-p3 1 0.972 0.546);
+	transition: all .2s ease-in-out;
+}
+
+.star:hover {
+	filter:drop-shadow(0px 0px 1.5em #fff597);
+	transform: scale(1.05);
+}
+
+.star:active {
+	fill: white;
+	transform: scale(1);
+	filter: drop-shadow(0px 0px 1em #ffffff);
+}
