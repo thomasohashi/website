@@ -171,19 +171,39 @@ header {
 	transition: all .15s ease-in-out;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
 	header {
-		font-size: 0.5em;
+		font-size: 0.75em;
+	}
+	.starbox ul {
+		height: 120px;
+	}
+	.star {
+		padding: 0.5em;
+		width: 4.5em;
+	}
+	
+	
+}
+
+@media only screen and (max-width: 415px) {
+	header {
+		font-size: 0.6em;
 	}
 	
 	.starbox ul {
-		height: 100px;
+		height: 120px;
 	}
 	
 	.star {
 		padding: 0.5em;
+		width: 4.5em;
+	}
+	h2 {
+		font-size: 2em;
 	}
 }
+
 
 .star:hover {
 	transform: scale(1.1);
@@ -230,5 +250,5 @@ header {
 	width: 80%;
 	max-width: 800px;
 	margin: 0 auto;
-	padding: 2eem 0;
+	padding: 1em 0;
 }
