@@ -128,6 +128,27 @@ header {
 	font-size: 1.75em;
 }
 
+.headerimage {
+	margin: 2em auto;
+	padding: 2em;
+	max-width: 800px;
+}
+
+.headerimage img {
+	transition: all .2s ease-in-out;
+	border-radius: 50px;
+}
+
+.headerimage img:hover {
+	transform: scale(1.01);
+	cursor: pointer;
+}
+
+.headerimage img:active {
+	transform: scale(1.0);
+	opacity: 0.5;
+}
+
 .starbox {
 	margin: 0 auto;
 	max-width: 800px;
@@ -168,7 +189,7 @@ header {
 	padding: 1em;
 	width: 5em;
 	min-width: 4em;
-	fill: color(display-p3 1 0.939 0.665);
+	fill: color(display-p3 1 0.916 0.541);
 	transition: all .15s ease-in-out;
 }
 
