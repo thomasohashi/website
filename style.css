@@ -67,6 +67,7 @@ h1 {
 	font-size: 5em;
 	color: color(display-p3 1 0.374 0.549);
 	font-family: "Cartridge Bold";
+	text-align: center;
 }
 
 p {
@@ -164,4 +165,11 @@ header h1 {
 	fill: color(display-p3 0.909 1 0.829);
 	transform: scale(1);
 	filter: drop-shadow(0px 0px 0.75em white);
+}
+
+.section {
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2eem 0;
 }
