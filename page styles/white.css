@@ -1,0 +1,17 @@
+html {
+	background: rgb(255, 255, 255);
+	color: rgb(59, 59, 59);
+}
+
+h1, h2, a {
+	color: rgb(156, 156, 156);
+}
+
+a:hover {
+	transform: scale(1.05);
+	text-shadow: 0 0 .125em rgb(156, 156, 156);
+}
+
+.star {
+	fill: rgb(156, 156, 156);
+}
