@@ -240,33 +240,39 @@ header {
 	width: 80%;
 	max-width: 800px;
 	margin: 0 auto;
-	padding: 1em 0;
 }
 
 .gallery {
-	margin: 1em auto;
+	padding: 1em 0;
+	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 10%;
 }
 
-.gallery-item {
-	display: grid;
+.gallery-item, .gallery-top {
+	margin: 0 1em;
+	display: flex;
+	flex-direction: column;
 }
 
-.gallery-item img {
+.gallery-item, .gallery-top img {
+	width: 100%;
 	border-radius: 15px;
 	transition: all .2s ease-in-out;
-	margin-top: 1em;
 }
 
-.gallery-item img:hover {
+.gallery-item, .gallery-top img:hover {
 	border-radius: 0;
-	transform: scale(1.5);
+	transform: scale(1.1);
+}
+
+.gallery-top img {
+	margin-bottom: 1em;
 }
 
 .gallery p {
 	text-align: center;
+	font-size: 1.2em;
 }
 
 footer {
