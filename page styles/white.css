@@ -9,7 +9,7 @@ h1, h2, a {
 
 a:hover {
 	transform: scale(1.05);
-	text-shadow: 0 0 .125em rgb(156, 156, 156);
+	text-shadow: 0 0 .125em rgba(156, 156, 156, 0.503);
 }
 
 .star {

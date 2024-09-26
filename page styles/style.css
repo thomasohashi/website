@@ -67,6 +67,10 @@ html {
 	font-size: 1.5em;
 }
 
+p {
+	margin: 0.5em auto;
+}
+
 h1 {
 	font-size: 4em;
 	font-family: "Cartridge Bold", sans-serif, system-ui;
@@ -80,6 +84,7 @@ h2 {
 	font-family: "Cartridge Bold", sans-serif, system-ui;
 	line-height: 1;
 	text-align: center;
+	margin: 0.25em auto;
 }
 
 h3 {
@@ -99,7 +104,6 @@ a {
 
 a:hover {
 	transform: scale(1.05);
-	text-shadow: 0 0 .125em color(display-p3 1 0.908 0.374);
 }
 
 header {
@@ -267,9 +271,8 @@ header {
 	transform: scale(1.03);
 }
 
-.gallery p {
-	text-align: center;
-	font-size: 1.2em;
+.bandcamp {
+	margin: 1em auto;
 }
 
 footer {
