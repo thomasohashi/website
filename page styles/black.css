@@ -93,14 +93,14 @@ h1, h2, a {
 
 a {
 	text-decoration: none;
-	font-family: "Cartridge Bold Rough", sans-serif, system-ui;
+	font-family: "Cartridge Bold", sans-serif, system-ui;
 	transition: all .1s ease-in-out;
 	display: inline-block;
 }
 
 a:hover {
 	transform: scale(1.05);
-	filter: drop-shadow(0 0 .25em color(display-p3 1 0.908 0.374));
+	text-shadow: 0 0 .125em color(display-p3 1 0.908 0.374);
 }
 
 header {
@@ -113,6 +113,7 @@ header {
 
 #preheader {
 	font-size: 2.5em;
+	line-height: 1; 
 }
 
 #trademark {
@@ -150,7 +151,10 @@ header {
 }
 
 .starbox {
-	margin: 0 auto;
+	margin: 1em auto;
+	justify-content: center;
+	text-align: center;
+	padding: 0 1em;
 	max-width: 920px;
 }
 
@@ -198,11 +202,9 @@ header {
 		font-size: 0.75em;
 	}
 	.starbox ul {
-		height: 120px;
+		height: 150px;
 	}
 	.star {
-		padding: 0.5em;
-		width: 4.5em;
 	}
 }
 
@@ -216,8 +218,6 @@ header {
 	}
 	
 	.star {
-		padding: 0.5em;
-		width: 4.5em;
 	}
 	h2 {
 		font-size: 2em;
@@ -280,7 +280,5 @@ header {
 
 footer {
 	margin: 1em auto;
-	justify-content: center;
-	text-align: center;
 	padding: 0 2em;
 }

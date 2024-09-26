@@ -93,14 +93,14 @@ h1, h2, a {
 
 a {
 	text-decoration: none;
-	font-family: "Cartridge Bold Rough", sans-serif, system-ui;
+	font-family: "Cartridge Bold", sans-serif, system-ui;
 	transition: all .1s ease-in-out;
 	display: inline-block;
 }
 
 a:hover {
 	transform: scale(1.05);
-	filter: drop-shadow(0 0 .25em color(display-p3 0.877 0.07 0));
+	text-shadow: 0 0 .125em color(display-p3 0.877 0.07 0);
 }
 
 header {
