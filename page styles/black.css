@@ -107,7 +107,7 @@ header {
 	margin: 1em auto;
 	justify-content: center;
 	text-align: center;
-	font-family: "Cartridge Bold";
+	font-family: "Cartridge Bold", sans-serif, system-ui;
 	padding: 0 2em;
 }
 
@@ -118,7 +118,7 @@ header {
 
 #trademark {
 	font-size: 2em;
-	font-family: "Mumbo";
+	font-family: "Mumbo", sans-serif, system-ui;
 }
 
 #mainheader {
