@@ -71,6 +71,11 @@ p {
 	margin: 0.5em auto;
 }
 
+hr {
+	margin: auto;
+	border: 1px solid;
+}
+
 h1 {
 	font-size: 4em;
 	font-family: "Cartridge Bold", sans-serif, system-ui;
@@ -273,6 +278,10 @@ header {
 
 .bandcamp {
 	margin: 1em auto;
+}
+
+.youtube {
+	margin: 1em auto;	
 }
 
 footer {
