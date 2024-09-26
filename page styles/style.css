@@ -249,11 +249,10 @@ header {
 .section {
 	width: 80%;
 	max-width: 960px;
-	margin: 0 auto;
+	margin: 1em auto;
 }
 
 .gallery {
-	padding: 1em 0;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -282,6 +281,7 @@ header {
 
 .youtube {
 	margin: 0.5em auto;	
+	width: 100%;
 }
 
 footer {
