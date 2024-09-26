@@ -1,0 +1,313 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+@font-face {
+	font-family: "Cartridge Bold";
+	src: url('../fonts/Cartridge-Bold.otf');
+}
+
+@font-face {
+	font-family: "Cartridge Regular";
+	src: url('../fonts/Cartridge-Regular.otf');
+}
+
+@font-face {
+	font-family: "Mumbo";
+	src: url('../fonts/MumboSSK.TTF');
+}
+
+html {
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	font-family: "Cartridge Regular", sans-serif, system-ui;
+	font-size: 1.5em;
+}
+
+h1 {
+	font-size: 4em;
+	font-family: "Cartridge Bold", sans-serif, system-ui;
+	text-align: center;
+	line-height: 1;
+	margin-bottom: 0.125em;
+}
+
+h2 {
+	font-size: 3em;
+	font-family: "Cartridge Bold", sans-serif, system-ui;
+	line-height: 1;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h1, h2, a {
+	color: color(display-p3 1 0.908 0.374);
+}
+
+a {
+	text-decoration: none;
+	font-family: "Cartridge Bold", sans-serif, system-ui;
+	transition: all .1s ease-in-out;
+	display: inline-block;
+}
+
+a:hover {
+	transform: scale(1.05);
+	text-shadow: 0 0 .125em color(display-p3 1 0.908 0.374);
+}
+
+header {
+	margin: 1em auto;
+	justify-content: center;
+	text-align: center;
+	font-family: "Cartridge Bold", sans-serif, system-ui;
+	padding: 0 2em;
+}
+
+#preheader {
+	font-size: 2.5em;
+	line-height: 1; 
+}
+
+#trademark {
+	font-size: 2em;
+	font-family: "Mumbo", sans-serif, system-ui;
+}
+
+#mainheader {
+
+}
+
+#postheader {
+	font-size: 1.75em;
+}
+
+.headerimage {
+	margin: 2em auto;
+	padding: 1em;
+	max-width: 720px;
+}
+
+.headerimage img {
+	transition: all .2s ease-in-out;
+	border-radius: 25px;
+}
+
+.headerimage img:hover {
+	transform: scale(1.01);
+	cursor: pointer;
+}
+
+.headerimage img:active {
+	transform: scale(1.0);
+	opacity: 0.5;
+}
+
+.starbox {
+	margin: 1em auto;
+	justify-content: center;
+	text-align: center;
+	padding: 0 1em;
+	max-width: 920px;
+}
+
+.starbox ul {
+	height: 200px;
+	margin: 1em auto;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+#starbox1 ul li:nth-child(1) {
+	align-self: flex-end;
+	transform: rotate(-10deg);
+}
+
+#starbox1 ul li:nth-child(3) {
+	align-self: flex-end;
+	transform: rotate(10deg);
+}
+
+#starbox2 ul li:nth-child(1) {
+	transform: rotate(10deg);
+}
+
+#starbox2 ul li:nth-child(2) {
+	align-self: flex-end;
+}
+
+#starbox2 ul li:nth-child(3) {
+	transform: rotate(-10deg);
+}
+
+.star {
+	fill: color(display-p3 1 0.908 0.374);
+	padding: 1.5em;
+	width: 5.5em;
+	min-width: 4em;
+	transition: all .15s ease-in-out;
+}
+
+.star:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#star1:active {
+	fill: white;
+	transform: scale(1);
+	filter: drop-shadow(0px 0px 1em white);
+}
+
+#star2:active {
+	fill: color(display-p3 0.738 0.932 1);
+	transform: scale(1);
+	filter: drop-shadow(0px 0px 0.75em color(display-p3 0.738 0.932 1));
+}
+
+#star3:active {
+	fill: color(display-p3 0.801 1 0.626);
+	transform: scale(1);
+	filter: drop-shadow(0px 0px 1em color(display-p3 0.801 1 0.626));
+}
+
+#star4:active {
+	fill: color(display-p3 1 0.84 0.57);
+	transform: scale(1);
+	filter: drop-shadow(0px 0px 1em color(display-p3 1 0.84 0.57));
+}
+
+#star5:active {
+	fill: color(display-p3 1 0.663 0.663);
+	transform: scale(1);
+	filter: drop-shadow(0px 0px 0.5em color(display-p3 1 0.663 0.663));
+}
+
+#star6:active {
+	fill: color(display-p3 0.952 0.663 1);
+	transform: scale(1);
+	filter: drop-shadow(0px 0px 1em color(display-p3 0.952 0.663 1));
+}
+
+.section {
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 1em 0;
+}
+
+.gallery {
+	margin-top: 1em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10%;
+	align-content: center;
+}
+
+.gallery-item img {
+	border-radius: 15px;
+	transition: all .2s ease-in-out;
+	margin-bottom: 1em;
+}
+
+.gallery-item img:hover {
+	border-radius: 0;
+	transform: scale(1.01);
+}
+
+.gallery-item img:active {
+	transform: scale(1.5);
+}
+
+.gallery p {
+	line-height: 2;
+	text-align: center;
+}
+
+footer {
+	margin: 1em auto;
+	padding: 0 2em;
+}
+
+@media only screen and (max-width: 550px) {
+	header, footer; {
+		font-size: 0.75em;
+	}
+	.starbox ul {
+		height: 150px;
+	}
+	.star {
+	}
+	.gallery {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	header, footer {
+		font-size: 0.6em;
+	}
+	
+	.starbox ul {
+		height: 120px;
+	}
+	
+	.star {
+	}
+	h2 {
+		font-size: 2em;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	header, footer {
+		font-size: 0.5em;
+	}
+}

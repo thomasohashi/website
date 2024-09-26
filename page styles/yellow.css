@@ -1,0 +1,17 @@
+html {
+	background: black;
+	color: white;
+}
+
+h1, h2, a {
+	color: color(display-p3 1 0.908 0.374);
+}
+
+a:hover {
+	transform: scale(1.05);
+	text-shadow: 0 0 .125em color(display-p3 1 0.908 0.374);
+}
+
+.star {
+	fill: color(display-p3 1 0.908 0.374);
+}
