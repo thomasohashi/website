@@ -249,25 +249,22 @@ header {
 	grid-template-columns: 1fr 1fr;
 }
 
-.gallery-item, .gallery-top {
-	margin: 0 1em;
+.gallery-item {
+	margin: 0 0.5em;
 	display: flex;
 	flex-direction: column;
 }
 
-.gallery-item, .gallery-top img {
+.gallery-item img {
 	width: 100%;
 	border-radius: 15px;
 	transition: all .2s ease-in-out;
-}
-
-.gallery-item, .gallery-top img:hover {
-	border-radius: 0;
-	transform: scale(1.1);
-}
-
-.gallery-top img {
 	margin-bottom: 1em;
+}
+
+.gallery-item img:hover {
+	border-radius: 0;
+	transform: scale(1.2);
 }
 
 .gallery p {
