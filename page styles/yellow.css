@@ -15,3 +15,7 @@ a:hover {
 .star {
 	fill: color(display-p3 1 0.908 0.374);
 }
+
+hr {
+	border: 1px solid white;
+}
