@@ -72,7 +72,7 @@ p {
 }
 
 hr {
-	margin: auto;
+	margin: 0.5em auto;
 	border: 1px solid;
 }
 
@@ -277,11 +277,11 @@ header {
 }
 
 .bandcamp {
-	margin: 1em auto;
+	margin: 0.5em auto;
 }
 
 .youtube {
-	margin: 1em auto;	
+	margin: 0.5em auto;	
 }
 
 footer {
