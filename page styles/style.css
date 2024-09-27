@@ -291,6 +291,7 @@ header {
 
 .youtube {
 	margin: 0.5em auto;	
+	aspect-ratio: 16 / 9;
 	width: 100%;
 }
 
