@@ -272,11 +272,12 @@ header {
 .gallery-item {
 	display: flex;
 	flex-direction: column;
+	padding: 0.5em;
 }
 
 .gallery-item img {
+	border-radius: 15px;
 	transition: all .3s ease-in-out;
-	padding: 0.5em;
 	margin-bottom: 1em;
 }
 
