@@ -147,13 +147,12 @@ header {
 }
 
 .headerimage img:hover {
-	transform: scale(1.01);
+	transform: scale(1.02);
 	cursor: pointer;
 }
 
 .headerimage img:active {
-	transform: scale(1.0);
-	opacity: 0.5;
+	transform: scale(1);
 }
 
 .starbox {
@@ -196,52 +195,63 @@ header {
 }
 
 .star {
-	fill: color(display-p3 1 0.908 0.374);
 	padding: 1.5em;
 	width: 5.5em;
 	min-width: 4em;
 	transition: all .15s ease-in-out;
 }
 
-.star:hover {
+#star1:hover {
+	fill: white;
 	transform: scale(1.1);
+	filter: drop-shadow(0px 0px 1em white);
 	cursor: pointer;
 }
 
-#star1:active {
-	fill: white;
-	transform: scale(1);
-	filter: drop-shadow(0px 0px 1em white);
-}
-
-#star2:active {
+#star2:hover {
 	fill: color(display-p3 0.738 0.932 1);
-	transform: scale(1);
+	transform: scale(1.1);
 	filter: drop-shadow(0px 0px 0.75em color(display-p3 0.738 0.932 1));
+	cursor: pointer;
 }
 
-#star3:active {
+#star3:hover {
 	fill: color(display-p3 0.801 1 0.626);
-	transform: scale(1);
+	transform: scale(1.1);
 	filter: drop-shadow(0px 0px 1em color(display-p3 0.801 1 0.626));
+	cursor: pointer;
 }
 
-#star4:active {
+#star4:hover {
 	fill: color(display-p3 1 0.84 0.57);
-	transform: scale(1);
+	transform: scale(1.1);
 	filter: drop-shadow(0px 0px 1em color(display-p3 1 0.84 0.57));
+	cursor: pointer;
 }
 
-#star5:active {
+#star5:hover {
 	fill: color(display-p3 1 0.663 0.663);
-	transform: scale(1);
+	transform: scale(1.1);
 	filter: drop-shadow(0px 0px 0.5em color(display-p3 1 0.663 0.663));
+	cursor: pointer;
 }
 
-#star6:active {
+#star6:hover {
 	fill: color(display-p3 0.952 0.663 1);
-	transform: scale(1);
+	transform: scale(1.1);
 	filter: drop-shadow(0px 0px 1em color(display-p3 0.952 0.663 1));
+	cursor: pointer;
+}
+
+#star7:hover {
+	fill: black;
+	transform: scale(1.1);
+	filter: drop-shadow(0px 0px 1em black);
+	cursor: pointer;
+}
+
+#star1:active, #star2:active, #star3:active, #star4:active, #star5:active, #star6:active, #star7:active {
+	transform: scale(1);
 }
 
 .section {
