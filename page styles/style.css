@@ -84,7 +84,7 @@ h1 {
 }
 
 h2 {
-	font-size: 3em;
+	font-size: 2.5em;
 	font-family: "Cartridge Bold", sans-serif, system-ui;
 	line-height: 1;
 	margin: 0.25em auto;
@@ -306,7 +306,7 @@ footer {
 	padding: 0 2em;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
 	header, footer; {
 		font-size: 0.75em;
 	}
