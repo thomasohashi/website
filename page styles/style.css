@@ -261,6 +261,8 @@ header {
 	margin: 1em auto;
 }
 
+/* Work Gallery */ 
+
 .gallery {
 	margin: 0 auto;
 	display: grid;
@@ -286,6 +288,49 @@ header {
 	transform: scale(1.03);
 }
 
+/* Games Gallery */
+
+.game-gallery {
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	list-style-type: none;
+	padding-inline-start: 0;
+	align-items: end;
+	text-align: center;
+}
+
+.game-item {
+	margin: 0.5em;
+	display: flex;
+	flex-direction: column;
+	line-height: 1.2;
+	transition: all 0.2s ease-in;
+	max-width: 240px;
+}
+
+.game-item a:hover {
+	transform: translateY(-5px) scale(1);
+	text-shadow: none;
+}
+
+.game-art {
+	margin: 0 auto 0.35em auto;
+}
+
+.game-name {
+	line-height: 1.2;
+}
+
+.game-platform {
+	font-size: 0.75em;
+	font-family: "Cartridge Bold";
+	color: rgb(59, 59, 59);
+}
+
+
+/* Other Media */
+
 .bandcamp {
 	margin: 0.5em auto;
 }
@@ -306,6 +351,12 @@ header {
 footer {
 	margin: 1em auto;
 	padding: 0 2em;
+}
+
+@media only screen and (max-width: 700px) {
+	.game-gallery {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -335,6 +386,12 @@ footer {
 	}
 	h2 {
 		font-size: 2em;
+	}
+	.game-gallery {
+		grid-template-columns: 1fr;
+	}
+	.game-item {
+		margin: 0.5em auto;
 	}
 }
 
