@@ -19,3 +19,12 @@ a:hover {
 hr {
 	border: 1px solid rgb(59, 59, 59);
 }
+
+table {
+	background: color(display-p3 0.873 0.419 1);
+	padding: 0.5em;
+	font-size: 0.85em;
+	width: 50%;
+	color: color(display-p3 0.97 0.873 1);
+	border-radius: 10px;
+}

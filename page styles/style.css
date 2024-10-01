@@ -65,14 +65,16 @@ html {
 	min-height: 100vh;
 	font-family: "Cartridge Regular", sans-serif, system-ui;
 	font-size: 1.5em;
+	font-weight: normal;
 }
 
 p {
-	margin: 0.5em auto;
+	margin: 0.5em 0 0.5em 0;
 }
 
 hr {
-	margin: 1.5em auto;
+	margin: 1em auto;
+	width: 100%;
 }
 
 h1 {
@@ -80,23 +82,20 @@ h1 {
 	font-family: "Cartridge Bold", sans-serif, system-ui;
 	text-align: center;
 	line-height: 1;
-	margin-bottom: 0.125em;
+	margin: 0.5em 0 0.125em 0;
 }
 
 h2 {
 	font-size: 2.5em;
 	font-family: "Cartridge Bold", sans-serif, system-ui;
 	line-height: 1;
-	margin: 0.25em auto;
+	margin: 0.5em 0 0.125em 0;
+
 }
 
 h3 {
 	font-size: 1.5em;
 	margin: 0.25em 0;
-}
-
-h1, h2, a {
-	color: color(display-p3 1 0.908 0.374);
 }
 
 a {
@@ -107,7 +106,7 @@ a {
 }
 
 a:hover {
-	transform: scale(1.05);
+	transform: scale(1.1);
 }
 
 header {
@@ -138,7 +137,7 @@ header {
 
 .headerimage {
 	margin: 2em auto;
-	padding: 1em;
+	padding: 0 1em;
 	max-width: 720px;
 }
 
@@ -259,6 +258,8 @@ header {
 	width: 80%;
 	max-width: 800px;
 	margin: 1em auto;
+	display: block;
+	flex-direction: column;
 }
 
 /* Work Gallery */ 
@@ -348,9 +349,70 @@ header {
 	padding: 0.5em;
 }
 
+.game-page {
+	display: flex;
+	margin: 1em auto;
+	width: 80%;
+	max-width: 800px;
+}
+
+.box-art {
+	padding-right: 2em;
+	width: 50%;
+}
+
+.box-art img {
+	border-radius: 15px;
+	transition: all 0.2s ease-in-out;
+}
+
+.box-art img:hover {
+	border-radius: 0;
+	transform: scale(1.05);
+}
+
+.box-art img:active {
+	transform: scale(1);
+}
+
+table {
+	display: block;
+}
+
+th {
+	text-align: start;
+	padding-right: 1em;
+	font-weight: normal;
+	font-family: "Cartridge Bold", sans-serif, system-ui;
+}
+
+tr {
+	vertical-align: top;
+	padding: 1em;
+}
+
 footer {
 	margin: 1em auto;
 	padding: 0 2em;
+}
+
+@media only screen and (max-width: 800px) {
+	.game-page {
+		flex-direction: column;
+		align-content: center;
+	}
+	.box-art {
+		margin: 0 auto;
+		padding-right: 0;
+		width: 100%;
+	}
+	.box-art img {
+		margin-bottom: 1em;
+	}
+	.game-info {
+		margin: 0 auto;
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 700px) {

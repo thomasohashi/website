@@ -8,7 +8,6 @@ h1, h2, a {
 }
 
 a:hover {
-	transform: scale(1.05);
 	text-shadow: 0 0 .125em color(display-p3 0.877 0.07 0 / 50%);
 }
 
