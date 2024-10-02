@@ -351,15 +351,15 @@ header {
 }
 
 .game-page {
-	display: flex;
+	display: block;
 	margin: 1em auto;
 	width: 80%;
 	max-width: 800px;
 }
 
 .box-art {
-	padding-right: 2em;
-	width: 50%;
+	margin: 0 auto 1em auto;
+	width: 75%;
 }
 
 .box-art img {
@@ -392,6 +392,11 @@ tr {
 	padding: 1em;
 }
 
+.game-info {
+	margin: 0 auto;
+	width: 75%;
+}
+
 footer {
 	margin: 1em auto;
 	padding: 0 2em;
@@ -404,23 +409,17 @@ footer {
 		flex-direction: column;
 		align-content: center;
 	}
-	.box-art {
-		margin: 0 auto;
-		padding-right: 0;
-		width: 100%;
-	}
-	.box-art img {
-		margin-bottom: 1em;
-	}
-	.game-info {
-		margin: 0 auto;
-		width: 100%;
-	}
 }
 
 @media only screen and (max-width: 700px) {
 	.game-gallery {
 		grid-template-columns: 1fr 1fr;
+	}
+	.box-art {
+		width: 100%;
+	}
+	.game-info {
+		width: 100%;
 	}
 }
 
@@ -436,22 +435,6 @@ footer {
 	.gallery {
 		grid-template-columns: 1fr;
 	}
-}
-
-@media only screen and (max-width: 480px) {
-	header, footer {
-		font-size: 0.6em;
-	}
-	
-	.starbox ul {
-		height: 120px;
-	}
-	
-	.star {
-	}
-	h2 {
-		font-size: 2em;
-	}
 	.game-gallery {
 		grid-template-columns: 1fr;
 	}
@@ -460,8 +443,22 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 480px) {
 	header, footer {
-		font-size: 0.5em;
+		font-size: 0.6em;
+	}
+	.starbox ul {
+		height: 120px;
+	}
+	.star {
+	}
+	h2 {
+		font-size: 2em;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	body {
+		font-size: 0.75em;
 	}
 }
