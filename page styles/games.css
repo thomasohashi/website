@@ -94,6 +94,11 @@ header {
 	width: 100%;
 }
 
+.box-art-tall img {
+	margin: 0 auto;
+	max-height: 480px;
+}
+
 .game-info {
 }
 
