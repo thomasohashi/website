@@ -60,6 +60,11 @@ p {
 	src: url('../fonts/MumboSSK.TTF');
 }
 
+@font-face {
+	font-family: "Departure";
+	src: url('../fonts/DepartureMono-Regular.otf')
+}
+
 html {
 	background-repeat: no-repeat;
 	min-height: 100vh;
@@ -144,7 +149,7 @@ header {
 
 .headerimage img {
 	transition: all .2s ease-in-out;
-	border-radius: 25px;
+	border-radius: 15px;
 }
 
 .headerimage img:hover {
@@ -406,7 +411,6 @@ footer {
 	margin: 1em auto;
 	padding: 0 2em;
 	max-width: 960px;
-	
 }
 
 @media only screen and (max-width: 800px) {
