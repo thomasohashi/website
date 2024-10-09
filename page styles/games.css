@@ -35,7 +35,7 @@ input, button, textarea, select {
 /*
   7. Avoid text overflows
 */
-p {
+p, h1, h2, h3, table {
   overflow-wrap: break-word;
 }
 /*
@@ -75,7 +75,7 @@ a {
 header {
 	margin: 1em auto;
 	text-align: center;
-	max-width: 800px;
+	width: 90%;
 }
 
 .game-page {
@@ -125,16 +125,29 @@ td {
 footer {
 	margin: 1em auto;
 	max-width: 600px;
+	width: 90%;
 }
 
-@media only screen and (max-width: 600px) {
-	body {
+@media only screen and (max-width: 700px) {
+	header {
 		font-size: 0.75em;
 	}
 }
 
-@media only screen and (max-width: 400px) {
-	body {
+@media only screen and (max-width: 550px) {
+	header {
 	font-size: 0.65em;
+	}
+	.game-page, footer {
+		font-size: 0.85em;
+	}
 }
+
+@media only screen and (max-width: 475px) {
+	header {
+	font-size: 0.5em;
+	}
+	.game-page, footer {
+		font-size: 0.75em;
+	}
 }
