@@ -60,7 +60,7 @@ html {
 }
 
 h1 {
-	font-size: 4em;
+font-size: 4em;
 	line-height: 1;
 }
 
@@ -100,6 +100,7 @@ header {
 }
 
 .game-info {
+	font-size: 0.85em;
 }
 
 .game-info table {
@@ -107,6 +108,7 @@ header {
 	border-collapse: collapse;
 	table-layout: fixed;
 	width: 100%;
+	max-width: 600px;
 }
 
 th {
@@ -124,7 +126,7 @@ td {
 
 footer {
 	margin: 1em auto;
-	max-width: 600px;
+	max-width: 800px;
 	width: 90%;
 }
 
