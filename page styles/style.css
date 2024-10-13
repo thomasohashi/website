@@ -387,26 +387,27 @@ footer ul {
 }
 
 @media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 550px) {
 	.starbox ul {
 		height: 150px;
 	}
+	.star {
+		width: 5em;
+		padding: 1.25em;
+	}
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 450px) {
 	body {
-		font-size: 0.85em;
+		font-size: 0.75em;
 	}
 	.starbox ul {
 		height: 120px;
-		font-size: 0.6em;
-		padding: 
 	}
-	h2 {
-		font-size: 2em;
-	}
-}
-
-@media only screen and (max-width: 320px) {
-	.starbox {
+	.star {
+		width: 4em;
+		padding: 1em;
 	}
 }
