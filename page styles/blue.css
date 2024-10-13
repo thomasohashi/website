@@ -3,7 +3,7 @@ html {
 	color: white;
 }
 
-h1, h2, a {
+h1, h2, a, .gallery-subhead {
 	color: color(display-p3 0.419 0.921 1);
 }
 
@@ -11,10 +11,14 @@ a:hover {
 	text-shadow: 0 0 .125em color(display-p3 0.419 0.921 1);
 }
 
-.star {
+.star, .icon {
 	fill: color(display-p3 0.419 0.921 1);
 }
 
 hr {
 	border: 1px solid white;
+}
+
+#email {
+	color: color(display-p3 0.419 0.921 1);
 }

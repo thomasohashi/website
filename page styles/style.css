@@ -83,7 +83,7 @@ hr {
 }
 
 h1 {
-	font-size: 4em;
+	font-size: 3.5em;
 	font-family: "Cartridge Bold", sans-serif, system-ui;
 	text-align: center;
 	line-height: 1;
@@ -100,7 +100,7 @@ h2 {
 
 h3 {
 	font-size: 1.5em;
-	margin: 0.25em 0;
+	margin: 0.125em 0;
 }
 
 a {
@@ -115,18 +115,13 @@ header {
 	justify-content: center;
 	text-align: center;
 	font-family: "Cartridge Bold", sans-serif, system-ui;
-	padding: 0 2em;
-	max-width: 960px;
+	max-width: 800px;
+	width: 80%;
 }
 
 #preheader {
-	font-size: 2.5em;
+	font-size: 2.25em;
 	line-height: 1; 
-}
-
-#trademark {
-	font-size: 2em;
-	font-family: "Mumbo", sans-serif, system-ui;
 }
 
 #mainheader {
@@ -134,7 +129,7 @@ header {
 }
 
 #postheader {
-	font-size: 1.75em;
+	font-size: 1.5em;
 }
 
 .headerimage {
@@ -264,36 +259,9 @@ header {
 	flex-direction: column;
 }
 
-/* Work Gallery */ 
+/* Gallery */
 
 .gallery {
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	list-style-type: none;
-	padding-inline-start: 0;
-}
-
-.gallery-item {
-	display: flex;
-	flex-direction: column;
-	padding: 0.5em;
-}
-
-.gallery-item img {
-	border-radius: 15px;
-	transition: all .3s ease-in-out;
-	margin-bottom: 1em;
-}
-
-.gallery-item img:hover {
-	border-radius: 0;
-	transform: scale(1.03);
-}
-
-/* Games Gallery */
-
-.game-gallery {
 	margin: 0 auto;
 	display: flex;
 	list-style-type: none;
@@ -304,68 +272,71 @@ header {
 	justify-content: space-around;
 }
 
-.game-gallery a:hover {
+.gallery a:hover {
 	text-shadow: none;
 	transform: translateY(-5px) scale(1);
 }
 
-.game-item {
+.gallery-item {
+	position: relative;
 	margin: 0.5em;
 	display: flex;
 	flex-direction: column;
 	line-height: 1.2;
 	transition: all 0.1s ease-in;
-	width: 240px;
+	width: 320px;
 }
 
-.game-extra {
-	display: none;
-	position: absolute;
-	background: white;
-	padding: 1em;
-	width: 120%;
-	font-size: 0.85em;
-	z-index: 100;
-	left: -30px;
-	bottom: 50px;
-	border-radius: 25px;
-}
-
-.game-item img {
-	max-height: 240px;
-	margin: 0 auto 1em auto;
-}
-
-.game-item:active {
+.gallery-item:active {
 	transform: translateY(0);
 }
 
-.game-item:hover .game-extra {
-	display: block;
+.gallery-extra {
+	visibility: hidden;
+	position: absolute;
+	background: white;
+	padding: 0 0.5em;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	align-content: center;
+	justify-content: center;
+	transition: opacity .2s, visibility .2s;
+	margin: 0;
 }
 
-.game-art {
-	margin: 0 auto 0.35em auto;
+.gallery-image {
+	position: relative;
+	margin: 0 auto 0.5em auto;
 }
 
-.game-name {
-	line-height: 0;
-	color: color(display-p3 0.873 0.419 1);
+.gallery img {
+	max-height: 420px;
+}
+
+.gallery-image:hover .gallery-extra {
+	visibility: visible;
+	opacity: 1;
+}
+
+.gallery-head {
+	line-height: 1em;
 	font-family: "Cartridge Bold", sans-serif, system-ui;
+	font-size: 1.2em;
+	margin-bottom: 0.125em;
 }
 
-.game-platform {
-	line-height: 0;
-	font-size: 0.75em;
+.gallery-subhead {
+	font-size: 0.875em;
 	font-family: "Cartridge Bold";
-	color: rgb(59, 59, 59);
 }
-
 
 /* Other Media */
 
 .bandcamp {
-	margin: 0.5em auto;
+	margin: 1em auto;
 }
 
 .youtube {
@@ -374,12 +345,6 @@ header {
 	width: 100%;
 }
 
-.album {
-	border-radius: 25px;
-	width: 100%;
-	max-width: 480px;
-	padding: 0.5em;
-}
 
 .game-page {
 	display: block;
@@ -430,11 +395,25 @@ tr {
 
 footer {
 	margin: 1em auto;
-	padding: 0 2em;
-	max-width: 960px;
+	max-width: 800px;
+	width: 80%;
+}
+
+footer ul {
+	list-style: none;
+	padding-inline-start: 0;
+}
+
+.icon {
+	height: 20px;
+	display: inline;
+	vertical-align: -0.0625em;
 }
 
 @media only screen and (max-width: 700px) {
+	.section {
+		text-align: center;
+	}
 	.box-art {
 		width: 100%;
 	}

@@ -3,7 +3,7 @@ html {
 	color: rgb(59, 59, 59);
 }
 
-h1, h2, a {
+h1, h2, a, .gallery-head {
 	color: color(display-p3 0.873 0.419 1);
 }
 
@@ -12,7 +12,7 @@ a:hover {
 	text-shadow: 0 0 .125em color(display-p3 0.873 0.419 1);
 }
 
-.star {
+.star, .icon {
 	fill: color(display-p3 0.873 0.419 1);
 }
 
@@ -27,4 +27,8 @@ table {
 	width: 50%;
 	color: color(display-p3 0.97 0.873 1);
 	border-radius: 10px;
+}
+
+#email {
+	color: color(display-p3 0.873 0.419 1);
 }
