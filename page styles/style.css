@@ -115,7 +115,7 @@ header {
 	justify-content: center;
 	text-align: center;
 	font-family: "Cartridge Bold", sans-serif, system-ui;
-	max-width: 800px;
+	max-width: 55ch;
 	width: 80%;
 }
 
@@ -250,7 +250,7 @@ header {
 
 .section {
 	width: 80%;
-	max-width: 800px;
+	max-width: 55ch;
 	margin: 1em auto;
 	display: block;
 	flex-direction: column;
@@ -365,7 +365,7 @@ tr {
 
 footer {
 	margin: 1em auto;
-	max-width: 800px;
+	max-width: 55ch;
 	width: 80%;
 }
 
