@@ -333,7 +333,7 @@ header {
 /* Other Media */
 
 .bandcamp {
-	margin: 1em auto;
+	margin: 0.5em auto;
 }
 
 .youtube {
@@ -407,5 +407,8 @@ footer ul {
 	}
 	.star {
 		padding: 15px;
+	}
+	.gallery-extra {
+		font-size: 0.75em;
 	}
 }
