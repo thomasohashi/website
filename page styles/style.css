@@ -110,8 +110,17 @@ a {
 	display: inline-block;
 }
 
+#secret-playdate {
+	color: rgb(59, 59, 59);
+	transition: all .5s ease-in-out;
+}
+
+#secret-playdate:hover {
+	transform: rotate(360deg) scale(1.1);
+}
+
 header {
-	margin: 1em auto;
+	margin: 0 auto;
 	justify-content: center;
 	text-align: center;
 	font-family: "Cartridge Bold", sans-serif, system-ui;
