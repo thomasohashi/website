@@ -198,36 +198,36 @@ header {
 }
 
 .star {
-	padding: 25px;
-	width: 125px;
+	padding: 1em;
+	width: 5em;
 	transition: all .15s ease-in-out;
 }
 
 #star1:hover {
 	fill: white;
 	transform: scale(1.1);
-	filter: drop-shadow(0px 0px 1em white);
+	filter: drop-shadow(0px 0px 0.5em white);
 	cursor: pointer;
 }
 
 #star2:hover {
 	fill: color(display-p3 0.738 0.932 1);
 	transform: scale(1.1);
-	filter: drop-shadow(0px 0px 0.75em color(display-p3 0.738 0.932 1));
+	filter: drop-shadow(0px 0px 0.5em color(display-p3 0.738 0.932 1));
 	cursor: pointer;
 }
 
 #star3:hover {
 	fill: color(display-p3 0.801 1 0.626);
 	transform: scale(1.1);
-	filter: drop-shadow(0px 0px 1em color(display-p3 0.801 1 0.626));
+	filter: drop-shadow(0px 0px 0.5em color(display-p3 0.801 1 0.626));
 	cursor: pointer;
 }
 
 #star4:hover {
 	fill: color(display-p3 1 0.84 0.57);
 	transform: scale(1.1);
-	filter: drop-shadow(0px 0px 1em color(display-p3 1 0.84 0.57));
+	filter: drop-shadow(0px 0px 0.6em color(display-p3 1 0.84 0.57));
 	cursor: pointer;
 }
 
@@ -241,14 +241,14 @@ header {
 #star6:hover {
 	fill: color(display-p3 0.952 0.663 1);
 	transform: scale(1.1);
-	filter: drop-shadow(0px 0px 1em color(display-p3 0.952 0.663 1));
+	filter: drop-shadow(0px 0px 0.5em color(display-p3 0.952 0.663 1));
 	cursor: pointer;
 }
 
 #star7:hover {
 	fill: black;
 	transform: scale(1.1);
-	filter: drop-shadow(0px 0px 1em black);
+	filter: drop-shadow(0px 0px 0.5em black);
 	cursor: pointer;
 }
 
